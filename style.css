@@ -13,6 +13,8 @@
 
 html {
     font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -145,12 +147,12 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     margin-top: 5.5rem;
-    min-height: 80vh;
+    min-height: 70vh;
     align-items: center;
     padding-right: 4.5rem;
 }
 
-.hero-content {
+.hero-content, .contact {
     display: flex;
     padding: 9rem 0;
     /* padding-right: 4.5rem; */
@@ -254,7 +256,7 @@ nav {
 
 .introduction-wrapper {
     display: flex;
-    padding-bottom: 9rem;
+    padding: 4.5rem 0 9rem 0;
     /* padding: 9rem 0; */
     align-items: center;
     border-radius: 48px;
