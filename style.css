@@ -145,14 +145,15 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     margin-top: 5.5rem;
-    height: 90vh;
+    min-height: 80vh;
     align-items: center;
+    padding-right: 4.5rem;
 }
 
 .hero-content {
     display: flex;
-    /* padding: 9rem 4.5rem 9rem 0; */
-    padding-right: 4.5rem;
+    padding: 9rem 0;
+    /* padding-right: 4.5rem; */
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -232,9 +233,10 @@ nav {
     gap: 0.75rem;
 }
 
-img {
-    background-image: linear-gradient(135deg, var(--grad03), var(--grad06));
-    height: 100%;
+.thumb-img {
+    /* background-image: linear-gradient(135deg, var(--grad03), var(--grad06)); */
+    height: 500px;
+    max-width: unset;
 }
 
 .hero-image {
@@ -252,9 +254,9 @@ img {
 
 .introduction-wrapper {
     display: flex;
-    /* padding: 72px; */
+    padding-bottom: 9rem;
+    /* padding: 9rem 0; */
     align-items: center;
-    gap: 24px;
     border-radius: 48px;
     /* background-image: linear-gradient(135deg, var(--grad02), var(--grad05)); */
 }
@@ -270,14 +272,13 @@ img {
     display: flex;    
     padding: 72px 0;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 72px;
 }
 
 .project-card {
     display: flex;
-    padding: 72px;
-    justify-content: center;
+    overflow: hidden;
     align-items: center;
     gap: 24px;
     border-radius: 24px;
@@ -288,10 +289,11 @@ img {
 
 .project-content-left {
     display: flex;
-    padding-right: 72px;
+    /* padding-right: 72px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    margin: 4.5rem;
 }
 
 .social-media-list {
@@ -310,8 +312,7 @@ img {
 }
 
 .project-content-right {
-    background-color: #eee;
-    height: 350px;
+    /* overflow: hidden; */
 }
 
 .project-filter {
