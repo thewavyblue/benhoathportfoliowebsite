@@ -1,0 +1,355 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --grad01: #E5FFFF;
+    --grad02: #FFFEE5;
+    --grad03: #E7FFE5;
+    --grad04: #FFE5F0;
+    --grad05: #F2E7FE;
+    --grad06: #FFF3E5;
+    --grad07: ;
+    --grad08: ;
+}
+
+html {
+    font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: -0.75rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a > p:hover, 
+.filter-tab:hover,
+.menu-link:hover {
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.pad-b-1 {
+    padding-bottom: 0.25rem;
+}
+
+.pad-b-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pad-b-3 {
+    padding-bottom: 0.75rem;
+}
+
+.pad-b-4 {
+    padding-bottom: 1rem;
+}
+
+.pad-b-5 {
+    padding-bottom: 1.25rem;
+}
+
+.pad-b-6 {
+    padding-bottom: 1.5rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+    z-index: 999;
+    margin-top: -5.5rem;;
+}
+
+nav {
+    display: flex;
+    height: 5.5rem;
+    width: auto;
+    padding: 0px 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch; 
+}
+
+.menu-link {
+    display: block;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    list-style: none;
+}
+
+/*.btn-cta {
+    display: flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, var(--grad01, #bbbbbb), var(--grad02, #ddd)) 1;
+}*/
+
+.homepage-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5.5rem;
+    height: 90vh;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    /* padding: 9rem 4.5rem 9rem 0; */
+    padding-right: 4.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.tag-style-1 {
+    border-image: linear-gradient(135deg, var(--grad01), var(--grad02)) 1;
+}
+
+.tag-style-2 {
+    border-image: linear-gradient(135deg, var(--grad03), var(--grad04)) 1;
+}
+
+.tag-style-3 {
+    border-image: linear-gradient(135deg, var(--grad05), var(--grad06)) 1;
+}
+
+.tag-style-4 {
+    border-image: linear-gradient(135deg, var(--grad04), var(--grad01)) 1;
+}
+
+.tag-style-5 {
+    border-image: linear-gradient(135deg, var(--grad06), var(--grad03)) 1;
+}
+
+.tag-style-6 {
+    border-image: linear-gradient(135deg, var(--grad02), var(--grad05)) 1;
+}
+
+.btn-style-1 {
+    background-image: linear-gradient(135deg, var(--grad01), var(--grad02));
+}
+
+.btn-style-2 {
+    background-image: linear-gradient(135deg, var(--grad03), var(--grad04));
+}
+
+.btn-style-3 {
+    background-image: linear-gradient(135deg, var(--grad05), var(--grad06));
+}
+
+.btn-style-4 {
+    background-image: linear-gradient(135deg, var(--grad04), var(--grad01));
+}
+
+.btn-style-5 {
+    background-image: linear-gradient(135deg, var(--grad06), var(--grad03));
+}
+
+.btn-style-6 {
+    background-image: linear-gradient(135deg, var(--grad02), var(--grad05));
+}
+
+.social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+img {
+    background-image: linear-gradient(135deg, var(--grad03), var(--grad06));
+    height: 100%;
+}
+
+.hero-image {
+    margin-top: 6rem;
+    height: 100%;
+}
+
+.hero-image-mask {
+    -webkit-mask-image: url(imgs/svg/hero-image-mask.svg);
+    mask-image: url(imgs/svg/hero-image-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    height: 100%;
+}
+
+.introduction-wrapper {
+    display: flex;
+    /* padding: 72px; */
+    align-items: center;
+    gap: 24px;
+    border-radius: 48px;
+    /* background-image: linear-gradient(135deg, var(--grad02), var(--grad05)); */
+}
+
+.keyword {
+    text-transform: uppercase;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-card-container {
+    display: flex;    
+    padding: 72px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.project-card {
+    display: flex;
+    padding: 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 4px;
+    border-image: linear-gradient(135deg, var(--grad02), var(--grad05)) 1;
+}
+
+.project-content-left {
+    display: flex;
+    padding-right: 72px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.sm-lockup {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-content-right {
+    background-color: #eee;
+    height: 350px;
+}
+
+.project-filter {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    height: auto;
+}
+
+.filter-tab,
+.btn-cta {
+    display: flex;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+    text-transform: uppercase;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.design {
+    display: flex;
+}
+
+.dev {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    padding: 36px 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
