@@ -102,13 +102,21 @@ header {
     width: 100%;
     background: var(--white);
     z-index: 999;
-    margin-top: -5.5rem;;
+    margin-top: -5.5rem;
 }
 
 nav {
     display: flex;
+    flex-direction: column;
     height: 5.5rem;
     width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
     padding: 0px 4.5rem;
     justify-content: space-between;
     align-items: center;
@@ -121,8 +129,55 @@ nav {
     align-self: stretch; 
 }
 
+@media only screen and (max-width: 700px) {
+    .main-nav {
+        display:none;
+    }
+}
+
+.nav-menu-mob {
+    display:none;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-menu-mob {
+        display: block;
+        flex-direction: row;
+        z-index: 1000;
+    }
+}
+
+.nav-menu-list-mob {
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-menu-list-mob > li > .menu-link {
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.nav-menu-icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu-icon {
+    display:block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .menu-link {
-    display: block;
+    display: flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;

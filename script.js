@@ -1,39 +1,47 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    const btnMenuMob = document.getElementById('nav-menu-mob');
+    let navMenuList = document.querySelector('.nav-menu-list-mob');
     const btnDev = document.getElementById('btn_dev');
     const btnDesign = document.getElementById('btn_design');
     const btnAll = document.getElementById('btn_all');
-    let designContent = document.querySelector('.design');
-    let devContent = document.querySelector('.dev');
+    let projectCards = document.querySelectorAll('.project-card');
 
-        btnDesign.addEventListener('click', function() {
-        // Toggle the visibility of the content with the 'design' class
-            if (designContent.style.display === 'none' || designContent.style.display === '') {
-                designContent.style.display = 'flex';
-                devContent.style.display = 'none';
-                console.log("show content incl. design, " + designContent.style.display);
+    btnDesign.addEventListener('click', function() {
+        // Show only 'design' projects, hide others
+        projectCards.forEach(function(card) {
+            if (card.classList.contains('design')) {
+                card.style.display = 'flex';
             } else {
-                devContent.style.display = 'none';
+                card.style.display = 'none';
             }
         });
-        
-        btnDev.addEventListener('click', function() {
-            // Toggle the visibility of the content with the 'dev' class
-            if (devContent.style.display === 'none' || devContent.style.display === '') {
-                devContent.style.display = 'flex';
-                designContent.style.display = 'none';
-                console.log("show content incl. dev, " + devContent.style.display);
-            } else {
-                designContent.style.display = 'none';
-            }
-        });
+    });
 
-        btnAll.addEventListener('click', function() {
-            // Toggle the visibility of the content with the 'dev' class
-            if (devContent.style.display === 'none' || designContent.style.display === 'none') {
-                devContent.style.display = 'flex';
-                designContent.style.display = 'flex';
-                console.log("show all " + devContent.style.display + designContent.style.display);
+    btnDev.addEventListener('click', function() {
+        // Show only 'development' projects, hide others
+        projectCards.forEach(function(card) {
+            if (card.classList.contains('dev')) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
             }
         });
+    });
+
+    btnAll.addEventListener('click', function() {
+        // Show all projects
+        projectCards.forEach(function(card) {
+            card.style.display = 'flex';
+        });
+    });
+
+    btnMenuMob.addEventListener('click', function() {
+        if (navMenuList.style.display === 'none' ) {
+            navMenuList.style.display = 'flex'
+        } else {
+            navMenuList.style.display = 'none';
+        }
+    })
+
 });
