@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const btnMenuMob = document.getElementById('nav-menu-mob');
-    let navMenuList = document.querySelector('.nav-menu-list-mob');
+    let navMenuListMob = document.querySelector('.nav-menu-list-mob');
+
     const btnDev = document.getElementById('btn_dev');
     const btnDesign = document.getElementById('btn_design');
     const btnAll = document.getElementById('btn_all');
     let projectCards = document.querySelectorAll('.project-card');
+    
+    let btnNav = document.querySelectorAll('main-nav.li');
+
 
     btnDesign.addEventListener('click', function() {
         // Show only 'design' projects, hide others
@@ -37,11 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     btnMenuMob.addEventListener('click', function() {
-        if (navMenuList.style.display === 'none' ) {
-            navMenuList.style.display = 'flex'
+        // Open and close nav menu on <700px screen sizes
+        if (navMenuListMob.style.display === 'none' ) {
+            navMenuListMob.style.display = 'flex';
         } else {
-            navMenuList.style.display = 'none';
+            navMenuListMob.style.display = 'none';
         }
     })
+
+    btnNav.addEventListener('click', function() {
+        // Close small screen nav menu on click
+        btnNav.forEach(function(link) {
+            if (navMenuList.style.display === 'flex' ) {
+                navMenuList.style.display = 'none';
+            }
+        });
+    });
 
 });
