@@ -101,8 +101,7 @@ header {
     position: fixed;
     width: 100%;
     background: var(--white);
-    z-index: 999;
-    margin-top: -5.5rem;
+    z-index: 1000;
 }
 
 nav {
@@ -182,26 +181,29 @@ nav {
 
 .homepage-hero {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 5.5rem;
-    min-height: 70vh;
     align-items: center;
     padding-right: 4.5rem;
+    height: calc(100vh + 5.5rem);
 }
 
 .hero-content, .contact {
     display: flex;
-    padding: 9rem 0;
     /* padding-right: 4.5rem; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
+}
+
+.contact {
+    padding: 7rem 0;
 }
 
 .category-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .tag {
@@ -272,9 +274,9 @@ nav {
     gap: 0.75rem;
 }
 
-.hero-image {
+/* .hero-image {
     display: none;
-}
+} */
 
 .hero-image-mask {
     -webkit-mask-image: url(imgs/svg/hero-image-mask.svg);
@@ -430,12 +432,22 @@ footer {
         /* height: fit-content; */
         /* max-width: none; */
     }
+
+    .homepage-hero {
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+
+    .profile-photo {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (min-width:992px) {
     .hero-image {
-        display: block;
-        margin-top: 6rem;
+        display: flex;
+        align-items: center;
         height: 100%;
     }
 
