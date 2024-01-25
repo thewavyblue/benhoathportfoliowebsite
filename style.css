@@ -31,11 +31,13 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    line-height: 2.5rem;
     margin-top: -0.75rem;
 }
 
 h3 {
     font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 h4 {
@@ -54,6 +56,12 @@ p {
     font-size: 1rem;
 }
 
+/* .project-card-title {
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
 a {
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -71,6 +79,10 @@ a > p:hover,
 .menu-link:hover {
     text-decoration: underline;
     text-transform: lowercase;
+}
+
+a > h3:hover {
+    text-decoration: underline;
 }
 
 .pad-b-1 {
@@ -99,6 +111,7 @@ a > p:hover,
 
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     background: var(--white);
     z-index: 1000;
@@ -274,10 +287,6 @@ nav {
     gap: 0.75rem;
 }
 
-/* .hero-image {
-    display: none;
-} */
-
 .hero-image-mask {
     -webkit-mask-image: url(imgs/svg/hero-image-mask.svg);
     mask-image: url(imgs/svg/hero-image-mask.svg);
@@ -345,9 +354,6 @@ nav {
     gap: 6px;
 }
 
-.project-content-right {
-}
-
 .project-filter {
     display: flex;
     flex-direction: row;
@@ -402,9 +408,15 @@ footer {
     justify-content: space-between;
 }
 
+.image-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
 
-
-
+.project-page-title {
+    padding: 4.5rem 0;
+}
 
 /* @media classes START HERE */
 
@@ -426,11 +438,6 @@ footer {
     
     .project-content-left {
         margin: 2rem 2rem 0 2rem;
-    }
-
-    .thumb-img {
-        /* height: fit-content; */
-        /* max-width: none; */
     }
 
     .homepage-hero {
