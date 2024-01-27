@@ -32,7 +32,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    margin-top: -0.75rem;
+    /* margin-top: -0.75rem; */
 }
 
 h3 {
@@ -56,11 +56,10 @@ p {
     font-size: 1rem;
 }
 
-/* .project-card-title {
-    font-family: "Bakbak One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-} */
+blockquote {
+    margin-left: 2rem;
+    font-style: italic;
+}
 
 a {
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
@@ -74,7 +73,8 @@ a:visited {
     text-decoration: none;
 }
 
-a > p:hover, 
+a > p:hover,
+a > span:hover, 
 .filter-tab:hover,
 .menu-link:hover {
     text-decoration: underline;
@@ -203,14 +203,13 @@ nav {
 
 .hero-content, .contact {
     display: flex;
-    /* padding-right: 4.5rem; */
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
 }
 
-.contact {
-    padding: 7rem 0;
+.py-6 {
+    padding: 6rem 0;
 }
 
 .category-tags {
@@ -287,6 +286,10 @@ nav {
     gap: 0.75rem;
 }
 
+.image-full-width {
+    height: 100%;
+}
+
 .hero-image-mask {
     -webkit-mask-image: url(imgs/svg/hero-image-mask.svg);
     mask-image: url(imgs/svg/hero-image-mask.svg);
@@ -297,8 +300,6 @@ nav {
 
 .introduction-wrapper {
     display: flex;
-    padding: 4.5rem 0 9rem 0;
-    /* padding: 9rem 0; */
     align-items: center;
     border-radius: 48px;
     /* background-image: linear-gradient(135deg, var(--grad02), var(--grad05)); */
@@ -313,17 +314,15 @@ nav {
 
 .project-card-container {
     display: flex;    
-    padding: 72px 0;
     flex-direction: column;
-    /* align-items: center; */
-    gap: 72px;
+    gap: 3rem;
 }
 
 .project-card {
     display: flex;
     overflow: hidden;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
     border-radius: 24px;
     border-style: solid;
     border-width: 4px;
@@ -335,7 +334,7 @@ nav {
     /* padding-right: 72px; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     margin: 4.5rem;
 }
 
@@ -344,14 +343,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 12px;
+    gap: 0.75rem;
     align-self: stretch;
 }
 
 .sm-lockup {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 0.5rem;
 }
 
 .project-filter {
@@ -365,7 +364,7 @@ nav {
 .filter-tab,
 .btn-cta {
     display: flex;
-    padding: 16px 48px;
+    padding: 1rem 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 48px;
@@ -375,14 +374,6 @@ nav {
     text-transform: uppercase;
     cursor: pointer;
 }
-
-/* .design {
-    display: flex;
-}
-
-.dev {
-    display: flex;
-} */
 
 footer {
     display: flex;
@@ -397,10 +388,6 @@ footer {
     margin-left: auto;
 }
 
-.red {
-    color: red;
-}
-
 .external-links {
     display: flex;
     flex-direction: column;
@@ -409,9 +396,32 @@ footer {
 }
 
 .image-container {
-    margin-top: 2rem;
     display: flex;
     gap: 2rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.figma-iframe {
+    border: 1px solid var(--black);
+}
+
+.flex-gap-2 {
+    display: flex;
+    gap: 2rem;
+}
+
+.ic-py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    gap: 2rem;
+}
+
+figcaption {
+    font-size: 0.8rem;
 }
 
 .project-page-title {
@@ -461,7 +471,7 @@ footer {
     .main-nav {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
         align-self: stretch; 
     }
 
