@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const btnMenuMob = document.getElementById('nav-menu-mob');
-    let navMenuListMob = document.querySelector('.nav-menu-list-mob');
 
     const btnDev = document.getElementById('btn_dev');
     const btnDesign = document.getElementById('btn_design');
@@ -38,24 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
         projectCards.forEach(function(card) {
             card.style.display = 'flex';
         });
-    });
-
-    btnMenuMob.addEventListener('click', function() {
-        // Open and close nav menu on <700px screen sizes
-        if (navMenuListMob.style.display === 'none' ) {
-            navMenuListMob.style.display = 'flex';
-        } else {
-            navMenuListMob.style.display = 'none';
-        }
-    })
-
-    btnNav.addEventListener('click', function() {
-        // Close small screen nav menu on click
-        btnNav.forEach(function(link) {
-            if (navMenuList.style.display === 'flex' ) {
-                navMenuList.style.display = 'none';
-            }
-        });
-    });
+    }); 
 
 });
+
+let navMenuListMob = document.querySelector('.nav-menu-list-mob');
+
+function menu() {
+    if (navMenuListMob.style.display === 'none' ) {
+        navMenuListMob.style.display = 'flex';
+    } else {
+        navMenuListMob.style.display = 'none';
+    }
+}
