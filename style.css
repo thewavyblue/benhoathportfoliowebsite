@@ -38,7 +38,6 @@ h1 {
 h2 {
     font-size: 1.75rem;
     line-height: 1.75rem;
-    /* margin-top: -0.75rem; */
 }
 
 h3 {
@@ -159,11 +158,12 @@ nav {
     background-color: var(--white);
     width: 100%;
     height: 100vh;
+    gap: 1rem;
 }
 
 .nav-menu-list-mob > li > .menu-link {
-    padding: 2rem 0;
-    font-size: 2rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
 }
 
 .nav-menu-icon-wrapper {
@@ -189,19 +189,13 @@ nav {
     gap: 0.75rem;
     border-radius: 1.5rem;
     list-style: none;
+    border-radius: 4rem;
 }
 
-/*.btn-cta {
-    display: flex;
-    padding: 12px 36px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 24px;
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(135deg, var(--grad01, #bbbbbb), var(--grad02, #ddd)) 1;
-}*/
+.mob-menu-link-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .homepage-hero {
     /* display: flex; */
@@ -386,7 +380,7 @@ nav {
     padding: 1rem 3rem;
     justify-content: center;
     align-items: center;
-    border-radius: 48px;
+    border-radius: 4rem;
     text-transform: uppercase;
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 700;
