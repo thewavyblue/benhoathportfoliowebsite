@@ -312,7 +312,6 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 3rem;
-    /* background-image: linear-gradient(135deg, var(--grad02), var(--grad05)); */
 }
 
 .keyword {
@@ -332,20 +331,12 @@ nav {
     display: flex;
     overflow: hidden;
     align-items: center;
-    /* gap: 1.5rem; */
     border-style: solid;
     border-width: 4px;
-    /* border-image: linear-gradient(135deg, var(--grad02), var(--grad05)) 1; */
 }
-
-/* .project-card:hover {
-    outline: 4px solid black;
-    outline-offset: 4px;
-} */
 
 .project-content-left {
     display: flex;
-    /* padding-right: 72px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -429,6 +420,11 @@ footer {
     border: 1px solid var(--black);
 }
 
+.flex-gap-1 {
+    display: flex;
+    gap: 1rem;
+}
+
 .flex-gap-2 {
     display: flex;
     gap: 2rem;
@@ -451,6 +447,26 @@ figcaption {
 
 .red {
     color: red;
+}
+
+#btn-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 4rem;
+    background-image: linear-gradient(135deg, var(--grad04), var(--grad01));
+}
+
+#btn-back-to-top:hover {
+    outline: 3px solid black;
+    border-radius: 2rem;
+}
+
+.back-to-top {
+    position: absolute;
 }
 
 /* @media classes START HERE */
