@@ -66,6 +66,10 @@ blockquote {
     font-style: italic;
 }
 
+.future-project {
+    color: orange;
+}
+
 a {
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -327,12 +331,19 @@ nav {
     gap: 3rem;
 }
 
+.future-projects-card-container {
+    display: flex;    
+    flex-direction: row;
+    gap: 3rem;
+}
+
 .project-card {
     display: flex;
     overflow: hidden;
     align-items: center;
     border-style: solid;
     border-width: 4px;
+    min-width: 401px;
 }
 
 .project-content-left {
