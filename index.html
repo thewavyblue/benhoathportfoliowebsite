@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTD6XSQLEB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CTD6XSQLEB');
+</script>
 <body>
     <header>
         <nav>
@@ -50,10 +59,14 @@
     <main class="container">
         <section class="row homepage-hero" id="hero">
             <article class="col-lg-6 offset-lg-1 hero-content">
-                <h2 class="eyebrow">Hi, my name is</h2>
-                <h1 class="title">Ben Hoath.</h1>
-                <h2 class="eyebrow">I am a</h2>
-                <h1 class="title">Digital Designer & Front End Developer.</h1>
+                <div class="title-wrapper">
+                    <h2 class="eyebrow">Hi, my name is</h2>
+                    <h1 class="title">Ben Hoath.</h1>
+                </div>
+                <div class="title-wrapper">
+                    <h2 class="eyebrow">I am a</h2>
+                    <h1 class="title">Digital Designer & Front End Developer.</h1>
+                </div>
                 <p>You're looking at a passionate Digital Designer-turning-Front End Developer based in Hastings, UK. This portfolio is a testament to my coding abilities whilst showcasing some of my favourite projects.</p>
                 <p>I do things like:</p>
                 <ul class="category-tags pad-b-2">
@@ -96,6 +109,11 @@
             <!--Project Filter-->
 
             <nav class="row project-filter">
+                <div class="row">
+                    <div class="col filter-tab">
+                        Filter projects by:
+                    </div>
+                </div>
                 <div class="col filter-tab btn-style-5" id="btn_design">
                     Design
                 </div>
@@ -126,9 +144,13 @@
                             <li class="tag tag-style-5">Branding</li>
                         </ul>
                         <div class="external-links">
-                            <a href="#" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <a href="/project-ce-cpt.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
+                            <a href="https://www.creativeestuary.com/culturalplanningtoolkit" rel="noreferrer noopener" target="_blank" class="sm-lockup">
                                 <img src="/imgs/svg/external-link.svg" alt="Live Demo">
-                                <p class="keyword">Live Demo</p>
+                                <p class="keyword">Go to live site</p>
                             </a>
                         </div>
                     </div>
@@ -157,6 +179,10 @@
                             <li class="tag tag-style-2">Javascript</li>
                         </ul>
                         <div class="external-links">
+                            <a href="/project-wedding-website.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
                             <a href="https://benandjentietheknot.site" rel="noreferrer noopener" target="_blank" class="sm-lockup">
                                 <img src="/imgs/svg/external-link.svg" alt="Live Demo">
                                 <p class="keyword">Go to live site</p>
@@ -185,6 +211,10 @@
                         <li class="tag tag-style-5">Identity</li>
                     </ul>
                     <div class="external-links">
+                        <a href="/project-sm.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
                         <a href="https://www.sussexmodern.org.uk" rel="noreferrer noopener" target="_blank" class="sm-lockup">
                             <img src="/imgs/svg/external-link.svg" alt="Live Demo">
                             <p class="keyword">Go to live site</p>
@@ -204,7 +234,7 @@
                         <li class="tag tag-style-1">Design</li>
                         <li class="tag tag-style-2">Development</li>
                     </ul>
-                    <a class="project-card-title" href="/project-sshc.html" rel="noreferrer noopener"><h3>Unitary Space</h3></a>
+                    <a class="project-card-title" href="/project-us.html" rel="noreferrer noopener"><h3>Unitary Space</h3></a>
                     <p>Our client – a savvy and veteran project managing consultant – required an identity that would allow them to kickstart their new venture, but also stand the test of time.</p>
                     <ul class="category-tags pad-b-2">
                         <li class="tag tag-style-2">UX</li>
@@ -215,6 +245,10 @@
                         <li class="tag tag-style-2">Javascript</li>
                     </ul>
                     <div class="external-links">
+                        <a href="/project-us.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
                         <a href="https://unitary.space" rel="noreferrer noopener" target="_blank" class="sm-lockup">
                             <img src="/imgs/svg/external-link.svg" alt="Live Demo">
                             <p class="keyword">Go to live site</p>
@@ -230,15 +264,20 @@
 
             <article class="col project-card tag-style-2 design">
                 <div class="col-md-4 project-content-left">
-                        <ul class="category-tags pad-b-2">
-                            <li class="tag tag-style-1">Design</li>
-                        </ul>
-                        <a class="project-card-title" href="/project-tassimojis.html" rel="noreferrer noopener"><h3>Tassimojis</h3></a>
-                        <p>What would an emoticon language inspired by TASSIMO's coffee pod design look like? I explored this idea...</p>
-                        <ul class="category-tags pad-b-2">
-                            <li class="tag tag-style-2">UI</li>
-                            <li class="tag tag-style-3">Illustration</li>
-                        </ul>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                    </ul>
+                    <a class="project-card-title" href="/project-tassimojis.html" rel="noreferrer noopener"><h3>Tassimojis</h3></a>
+                    <p>What would an emoticon language inspired by TASSIMO's coffee pod design look like? I explored this idea...</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-2">UI</li>
+                        <li class="tag tag-style-3">Illustration</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-tassimojis.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col project-content-right">
@@ -259,6 +298,12 @@
                             <li class="tag tag-style-2">Identity</li>
                             <li class="tag tag-style-3">Branding</li>
                         </ul>
+                        <div class="external-links">
+                            <a href="/project-jc-carpentry.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col project-content-right">
@@ -277,10 +322,14 @@
                         – Brand update & social media assets</h3></a>
                     <p>After the COVID lockdowns, SSHC was need of a social media push as their presence was pretty much non-existent.</p>
                     <ul class="category-tags pad-b-2">
-                        <li class="tag tag-style-2">Branding</li>
-                        <li class="tag tag-style-3">Identity</li>
+                        <li class="tag tag-style-1">Branding</li>
+                        <li class="tag tag-style-2">Identity</li>
                     </ul>
                     <div class="external-links">
+                        <a href="/project-sshc.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
                         <a href="https://www.instagram.com/southsaxonshockey" rel="noreferrer noopener" target="_blank" class="sm-lockup">
                             <img src="/imgs/svg/external-link.svg" alt="Live Demo">
                             <p class="keyword">Go to live site</p>
@@ -294,7 +343,7 @@
         
             <!--Projects coming soon...-->
         
-        <section class="row future-projects-card-container py-6">
+        <section class="row future-projects-card-container">
             <div class="row">
                 <div class="col offset-lg-1">
                     <h2>Future Projects</h2>

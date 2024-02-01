@@ -70,6 +70,12 @@ blockquote {
     color: orange;
 }
 
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
 a {
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -506,11 +512,17 @@ figcaption {
         flex-direction: column-reverse;
         padding-right: 0;
         align-items: flex-start;
+        height: auto;
+        padding-top: 5.5rem;
     }
 
     .profile-photo {
         width: 50%;
         margin-bottom: 2rem;
+    }
+
+    .py-6 {
+        padding: 3rem 0;
     }
 }
 
@@ -531,7 +543,7 @@ figcaption {
     .thumb-img {
         max-height: 550px;
         max-width: unset;
-    }    
+    } 
 }
 
 @media only screen and (max-width:645px) {
@@ -541,6 +553,11 @@ figcaption {
         padding-right: calc(var(--bs-gutter-x) * 0.5);
         padding-left: calc(var(--bs-gutter-x) * 0.5);
     }
+
+    /* .homepage-hero {
+        height: auto;
+        padding-top: 5.5rem;
+    } */
 }
 
 @media only screen and (min-width: 645px) {
