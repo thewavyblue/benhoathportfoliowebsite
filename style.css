@@ -389,6 +389,7 @@ nav {
 }
 
 .filter-tab,
+.filter-label,
 .btn-cta {
     display: flex;
     padding: 1rem 3rem;
@@ -400,6 +401,10 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.filter-label {
+    cursor: auto;
 }
 
 footer {
