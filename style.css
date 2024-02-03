@@ -13,7 +13,7 @@
 
 html {
     font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
-    scroll-padding-top: 2rem;
+    scroll-padding-top: 4rem;
     scroll-behavior: smooth;
 }
 
@@ -70,10 +70,18 @@ blockquote {
     color: orange;
 }
 
+.future-project-title {
+    text-transform: uppercase;
+}
+
 .title-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+
+.outline {
+
 }
 
 a {
@@ -82,6 +90,8 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--black);
+    outline-offset: 0.25rem;
+    outline-color: orange;
 }
 
 a:visited {
@@ -91,14 +101,17 @@ a:visited {
 a > p:hover,
 a > span:hover, 
 .filter-tab:hover,
-.menu-link:hover {
+.menu-link:hover,
+.button:hover {
     text-decoration: underline;
     text-transform: lowercase;
 }
 
 .filter-tab:hover,
-.menu-link:hover {
+.menu-link:hover,
+.button:hover {
     outline: 3px solid var(--black);
+    outline-offset: 0.25rem;
 }
 
 a > h3:hover {
@@ -160,6 +173,14 @@ nav {
 .nav-menu-mob {
     display:none;
     flex-direction: column;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.nav-menu-mob:hover {
+    outline: 3px solid var(--black);
+    outline-offset: 0.25rem;
 }
 
 .nav-menu-list-mob {
@@ -341,6 +362,7 @@ nav {
     display: flex;    
     flex-direction: row;
     gap: 3rem;
+    padding-top: 3rem;
 }
 
 .project-card {
@@ -362,7 +384,7 @@ nav {
 
 .project-content-right {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .social-media-list {
@@ -480,6 +502,8 @@ figcaption {
     cursor: pointer;
     border-radius: 4rem;
     background-image: linear-gradient(135deg, var(--grad04), var(--grad01));
+    outline-offset: 0.25rem;
+    outline-color: orange;
 }
 
 #btn-back-to-top:hover {
@@ -489,6 +513,18 @@ figcaption {
 
 .back-to-top {
     position: absolute;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(135deg, var(--grad04), var(--grad01));
+    outline-offset: 0.25rem;
+    outline-color: orange;
+    cursor: pointer;
+}
+
+.button:hover {
+
 }
 
 /* @media classes START HERE */
