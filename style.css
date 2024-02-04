@@ -78,10 +78,6 @@ blockquote {
     gap: 0.25rem;
 }
 
-.outline {
-
-}
-
 a {
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -98,14 +94,16 @@ a:visited {
 
 a > p:hover,
 a > span:hover, 
-.filter-tab:hover,
+.btn-filter:hover,
 .menu-link:hover,
 .button:hover {
     text-decoration: underline;
     text-transform: lowercase;
 }
 
-.filter-tab:hover,
+.btn-filter:hover,
+.btn-filter:active,
+.btn-filter-active,
 .menu-link:hover,
 .button:hover {
     outline: 3px solid var(--black);
@@ -363,7 +361,8 @@ nav {
     padding-top: 3rem;
 }
 
-.project-card {
+.project-card,
+.future-project-card {
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -408,7 +407,7 @@ nav {
     height: auto;
 }
 
-.filter-tab,
+.btn-filter,
 .filter-label,
 .btn-cta {
     display: flex;
@@ -521,10 +520,6 @@ button {
     cursor: pointer;
 }
 
-.button:hover {
-
-}
-
 /* @media classes START HERE */
 
 @media only screen and (max-width: 992px) {
@@ -552,7 +547,7 @@ button {
         padding-right: 0;
         align-items: flex-start;
         height: auto;
-        padding-top: 5.5rem;
+        padding-top: 6.5rem;
     }
 
     .profile-photo {
@@ -563,6 +558,18 @@ button {
     .py-6 {
         padding: 3rem 0;
     }
+
+    /* .nav-bar {
+        position: absolute;
+        transform: translateY(5rem);
+        background-color: var(--white);
+        width: 100%;
+        transition: 5s;
+    }
+
+    .nav-bar-scrolled {
+        transform: translateY(-5rem);
+    } */
 }
 
 @media only screen and (min-width:993px) {
@@ -607,3 +614,8 @@ button {
     }
 }
 
+@media only screen and (max-width: 425px) {
+    .project-card {
+        min-width: 100%;
+    }
+}

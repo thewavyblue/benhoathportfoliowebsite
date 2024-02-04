@@ -13,6 +13,14 @@ menuItems.forEach(function(item) {
     item.addEventListener('click', function() {
         // Close the menu
         navMenuListMob.style.display = 'none';
-        console.log("menu closed");
+        console.log('menu closed');
     });
 });
+
+
+
+// Hide the nav bar on scroll
+// document.addEventListener('scroll', function() {
+//     let navBarMob = document.querySelector('.nav-bar');
+//     navBarMob.classList.add = 'nav-bar-scrolled';
+// });
