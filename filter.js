@@ -30,11 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Add a click listener to the buttons and show/hide depending on display state
-    btnDesign.addEventListener('click', function() {
-        // Style the button to show it's the active filter
-    
 
-        // Show only 'design' projects, hide others
+    // Show only 'design' projects, hide others
+    btnDesign.addEventListener('click', function() {
         projectCards.forEach(function(card) {
             if (card.classList.contains('design')) {
                 card.style.display = 'flex';
@@ -44,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 btnAll.classList.remove('btn-filter-active');
             } else {
                 card.style.display = 'none';
-                btnDesign.classList.remove('btn-filter-active');
             }
         });
     });
 
+    // Show only 'dev' projects, hide others
     btnDev.addEventListener('click', function() {
         projectCards.forEach(function(card) {
             if (card.classList.contains('dev')) {
@@ -59,13 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 btnAll.classList.remove('btn-filter-active');
             } else {
                 card.style.display = 'none';
-                btnDev.classList.remove('btn-filter-active');
             }
         });
     });
 
+    // Show all projects
     btnAll.addEventListener('click', function() {
-        // Show all projects
         projectCards.forEach(function(card) {
             card.style.display = 'flex';
             // Indicate 'Filter all'
