@@ -520,6 +520,10 @@ button {
     cursor: pointer;
 }
 
+#msg-projects-viewing {
+
+}
+
 /* @media classes START HERE */
 
 @media only screen and (max-width: 992px) {

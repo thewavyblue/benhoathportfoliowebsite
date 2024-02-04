@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
     btnAll.textContent += `(${allQty})`;
 
 
+    // Show a message to describe what the user is actively viewing
+    let msgView = document.getElementById('msg-projects-viewing');
+    
+
     // Add a click listener to the buttons and show/hide depending on display state
 
     // Show only 'design' projects, hide others
@@ -37,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (card.classList.contains('design')) {
                 card.style.display = 'flex';
                 // Indicate 'Filter design'
+                msgView.textContent = `Currently viewing design projects`;
                 btnDesign.classList.add('btn-filter-active');
                 btnDev.classList.remove('btn-filter-active');
                 btnAll.classList.remove('btn-filter-active');
@@ -52,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (card.classList.contains('dev')) {
                 card.style.display = 'flex';
                 // Indicate 'Filter dev'
+                msgView.textContent = `Currently viewing developmment projects`;
                 btnDev.classList.add('btn-filter-active');
                 btnDesign.classList.remove('btn-filter-active');
                 btnAll.classList.remove('btn-filter-active');
@@ -66,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectCards.forEach(function(card) {
             card.style.display = 'flex';
             // Indicate 'Filter all'
+            msgView.textContent = `Currently viewing all projects`;
             btnAll.classList.add('btn-filter-active');
             btnDev.classList.remove('btn-filter-active');
             btnDesign.classList.remove('btn-filter-active');
