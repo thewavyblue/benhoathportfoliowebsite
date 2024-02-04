@@ -528,7 +528,8 @@ button {
 /* @media classes START HERE */
 
 @media only screen and (max-width: 992px) {
-    .project-card {
+    .project-card,
+    #msg-projects-viewing {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -624,7 +625,8 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-    .project-card {
+    .project-card,
+    #msg-projects-viewing {
         min-width: 100%;
     }
 }
