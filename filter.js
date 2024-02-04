@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (card.classList.contains('dev')) {
                 card.style.display = 'flex';
                 // Indicate 'Filter dev'
-                msgView.textContent = `Currently viewing developmment projects`;
+                msgView.textContent = `Currently viewing development projects`;
                 btnDev.classList.add('btn-filter-active');
                 btnDesign.classList.remove('btn-filter-active');
                 btnAll.classList.remove('btn-filter-active');

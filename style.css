@@ -362,7 +362,8 @@ nav {
 }
 
 .project-card,
-.future-project-card {
+.future-project-card,
+#msg-projects-viewing {
     display: flex;
     overflow: hidden;
     align-items: center;
