@@ -372,6 +372,10 @@ nav {
     min-width: 401px;
 }
 
+#msg-projects-viewing {
+    min-width: 100%
+}
+
 .project-content-left {
     display: flex;
     flex-direction: column;
