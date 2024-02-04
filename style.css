@@ -559,6 +559,10 @@ button {
         padding: 3rem 0;
     }
 
+    .future-project-card {
+        min-width: 100%;
+    }
+
     /* .nav-bar {
         position: absolute;
         transform: translateY(5rem);
