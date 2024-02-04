@@ -7,8 +7,6 @@
     --grad04: #FFE5F0;
     --grad05: #F2E7FE;
     --grad06: #FFF3E5;
-    --grad07: ;
-    --grad08: ;
 }
 
 html {
@@ -594,11 +592,6 @@ button {
         padding-right: calc(var(--bs-gutter-x) * 0.5);
         padding-left: calc(var(--bs-gutter-x) * 0.5);
     }
-
-    /* .homepage-hero {
-        height: auto;
-        padding-top: 5.5rem;
-    } */
 }
 
 @media only screen and (min-width: 645px) {
