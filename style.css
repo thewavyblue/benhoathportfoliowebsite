@@ -68,6 +68,10 @@ blockquote {
     color: orange;
 }
 
+.live-project {
+    color: rgb(22, 216, 4);
+}
+
 .future-project-title {
     text-transform: uppercase;
 }
