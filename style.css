@@ -529,38 +529,6 @@ button {
     cursor: pointer;
 }
 
-.statement,
-#statement {
-    display: inline-block;
-    background: #018cff;
-    font-weight: 600;
-    border-radius: 2rem;
-    color: var(--white);
-    padding: 1rem 2rem;
-    width: 40vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0.5rem 1rem #00000030;
-}
-
-.statement > p {
-    font-size: 1.25rem;
-}
-
-#statement-bubble-point{
-    position: absolute;
-    left: 25rem;
-    bottom: -0.25rem;
-}
-
-.image[data-status="inactive"] {
-    display: none;
-  }
-  
-  .image[data-status="active"] {
-    display: block;
-  }
-
 .hidden {
     display: none;
 }
@@ -668,5 +636,39 @@ button {
     .project-card,
     #msg-projects-viewing {
         min-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .statement,
+    #statement {
+        display: inline-block;
+        background: #018cff;
+        font-weight: 600;
+        border-radius: 2rem;
+        color: var(--white);
+        padding: 1rem 2rem;
+        width: 40vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0.5rem 1rem #00000030;
+    }
+
+    .statement > p {
+        font-size: 1.25rem;
+    }
+
+    #statement-bubble-point{
+        position: absolute;
+        left: 25rem;
+        bottom: -0.25rem;
+    }
+
+    .image[data-status="inactive"] {
+        display: none;
+    }
+    
+    .image[data-status="active"] {
+        display: block;
     }
 }
