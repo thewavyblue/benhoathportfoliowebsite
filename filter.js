@@ -8,19 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let designProjects = document.querySelectorAll('.design');
     let futureProjects = document.querySelectorAll('.fp');
 
-
     // Count the number of projects in a category
     let allQty = projectCards.length;
-    console.log("Total Projects: " + allQty); 
 
     let devQty = devProjects.length;
-    console.log("Total Dev Projects: " + devQty); 
 
     let designQty = designProjects.length;
-    console.log("Total Design Projects: " + designQty); 
     
     let fpQty = futureProjects.length;
-    console.log("Total Future Projects: " + fpQty); 
 
 
     // Add a number indicator next to the filter label text counting the amount of projects in the category
