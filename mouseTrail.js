@@ -24,7 +24,7 @@ const calculateDistance = (x, y) => Math.hypot(x - last.x, y - last.y);
 
 const getStatement = (index) => {
     const adjustedIndex = index % quotes.length;
-    statementQuote.innerHTML = `I'm ${quotes[adjustedIndex].quote}<br><span class="fine-text">[Double click / tap anywhere to hide]</span>`;
+    statementQuote.innerHTML = `I'm ${quotes[adjustedIndex].quote}<br><span class="fine-text">[Double click anywhere to hide]</span>`;
 }
 
 const handleMouseMove = (e) => {
