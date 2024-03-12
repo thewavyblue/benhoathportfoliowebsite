@@ -530,7 +530,12 @@ button {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+.fine-text {
+    color: #ffffff50;
+    font-size: 0.8rem;
 }
 
 /* @media classes START HERE */
@@ -640,15 +645,14 @@ button {
 }
 
 @media only screen and (min-width: 769px) {
-    .statement,
-    #statement {
+    .statement{
         display: inline-block;
         background: #018cff;
         font-weight: 600;
         border-radius: 2rem;
         color: var(--white);
         padding: 1rem 2rem;
-        width: 40vmin;
+        width: 350px;
         position: absolute;
         transform: translate(-50%, -50%);
         box-shadow: 0 0.5rem 1rem #00000030;
@@ -660,8 +664,9 @@ button {
 
     #statement-bubble-point{
         position: absolute;
-        left: 25rem;
-        bottom: -0.25rem;
+        left: 355px;
+        bottom: -6px;
+        width: 10%;
     }
 
     .image[data-status="inactive"] {
@@ -672,3 +677,34 @@ button {
         display: block;
     }
 }
+
+@media only screen and (min-width: 769px) {
+    #statement-bubble-point{
+        position: absolute;
+        left: 325px;
+        bottom: -6px;
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .statement{
+        width: 500px;
+    }
+    
+    #statement-bubble-point{
+        position: absolute;
+        left: 465px;
+        bottom: -6px;
+        width: 10%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #statement-bubble-point{
+        display: none;
+    }
+}
+
