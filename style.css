@@ -148,6 +148,7 @@ header {
     width: 100%;
     background: var(--white);
     z-index: 1000;
+    transition: top 0.3s;
 }
 
 nav {
@@ -156,6 +157,10 @@ nav {
     width: auto;
     justify-content: space-between;
     align-items: center;
+}
+
+#nav-bar {
+    top: auto;
 }
 
 .nav-bar {
@@ -581,18 +586,6 @@ button {
     .future-project-card {
         min-width: 100%;
     }
-
-    /* .nav-bar {
-        position: absolute;
-        transform: translateY(5rem);
-        background-color: var(--white);
-        width: 100%;
-        transition: 5s;
-    }
-
-    .nav-bar-scrolled {
-        transform: translateY(-5rem);
-    } */
 }
 
 @media only screen and (min-width:993px) {
@@ -641,6 +634,10 @@ button {
     .project-card,
     #msg-projects-viewing {
         min-width: 100%;
+    }
+
+    .statement {
+        display: none;
     }
 }
 
