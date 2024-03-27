@@ -65,6 +65,10 @@ blockquote {
 }
 
 .future-project {
+    color: purple;
+}
+
+.in-progress-project {
     color: orange;
 }
 
