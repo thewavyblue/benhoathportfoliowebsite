@@ -23,16 +23,16 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTD6XSQLEB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CTD6XSQLEB');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTD6XSQLEB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CTD6XSQLEB');
-</script>
 <body>
     <header id="nav-bar">
         <nav>
@@ -123,7 +123,7 @@
                 </div>
             </article>
         </section>
-        <section class="row project-card-container py-6" id="portfolio">
+        <section class="row project-card-container" id="portfolio-nav">
 
             <!--Project Filter-->
 
@@ -148,8 +148,8 @@
                     </div>
                 </div>
             </nav>
-
-            <!--Projects-->
+        </section>
+        <section class="row project-card-container py-6" id="portfolio">
 
             <!--Project 1-->
 
@@ -621,15 +621,18 @@
 
     <!--Back to top button-->
     
-    <img loading="lazy" src="/imgs/svg/icon-back-to-top.svg" alt="Back to top" id="btn-back-to-top" tabindex="0" onclick="topFunction()">
+    <img loading="lazy" src="/imgs/svg/icon-back-to-top.svg" alt="Back to top" id="btn-back-to-top" tabindex="0">
     
     <footer>
         <p>© 2024 – forever. Coded by hand, developed with <span class="red">♥</span></p>
     </footer>
-    <script src="filter.js"></script>
-    <script src="backToTop.js"></script>
-    <script src="nav.js"></script>
-    <script src="mouseTrail.js" type="module"></script>
-    <script src="quotes.js" type="module"></script>
+    <script src="/src/filter.js"></script>
+    <script src="/src/backToTop.js"></script>
+    <script src="/src/nav.js"></script>
+    <!-- <script src="/src/loadProjects.js" type="module"></script>
+    <script src="/src/projects.js" type="module"></script> -->
+    <script src="/src/mouseTrail.js" type="module"></script>
+    <script src="/src/quotes.js" type="module"></script>
+    
 </body>
 </html>
