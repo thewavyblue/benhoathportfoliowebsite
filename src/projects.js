@@ -47,4 +47,25 @@ export const projects = [
         thumbImg: "/imgs/wedding-rsvp-website/Wedding-RSVP-iPhone-Mockup-Boards-thumb.png",
         alt: "My Wedding R.S.V.P Website"
     },
+    {
+        title: "Sussex Modern website",
+        description: "Flagship website for Sussex tourism focused on art, landscape and wine around the East and West Sussex countryside. The site is an active blog and editorial platform showcasing some of the best qualities of Sussex, visited by thousands of users every month.",
+        projectTags: [
+            "UX",
+            "UI",
+            "Branding",
+            "Identity"
+        ],
+        categoryTags: [
+            "Design"
+        ],
+        categoryTagClasses: [
+            "design"
+        ],
+        linkExt: "https://www.sussexmodern.org.uk",
+        linkGitHub: "",
+        linkProject: "/project-sm.html",
+        thumbImg: "/imgs/sussex-modern/sm-devices-mockup-thumb.png",
+        alt: "Sussex Modern website"
+    },
 ]

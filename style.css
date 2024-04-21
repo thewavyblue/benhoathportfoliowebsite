@@ -254,6 +254,10 @@ nav {
     gap: 1rem;
 }
 
+.vh-100 {
+    height: 100vh;
+}
+
 .py-6 {
     padding: 6rem 0;
 }
