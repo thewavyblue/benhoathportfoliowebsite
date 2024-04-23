@@ -720,11 +720,9 @@ button {
     }
 }
 
-
-
 @media only screen and (max-width: 768px) {
-    #statement-bubble-point{
+    #statement-bubble-point,
+    .mob-hide{
         display: none;
-    }
+    }    
 }
-
