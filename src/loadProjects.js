@@ -67,7 +67,7 @@ projects.forEach(project => {
 
                 if(project.thumbImg !== ""){
                     portfolioHtml += `
-                    <div class="col project-content-right">
+                    <div class="col project-content-center">
                         <a href="/project-ce-cpt.html" rel="noreferrer noopener" tabindex="-1">
                             <img loading="lazy" class="thumb-img" src="${project.thumbImg}" alt="${project.alt}">
                         </a>

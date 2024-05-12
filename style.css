@@ -424,9 +424,9 @@ nav {
     margin: 4.5rem;
 }
 
-.project-content-right {
+.project-content-center {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .social-media-list {
@@ -600,9 +600,6 @@ button {
 
     .project-content-left {
         width: auto;
-    }
-    
-    .project-content-left {
         margin: 2rem;
     }
 
@@ -649,7 +646,7 @@ button {
 
     .thumb-img {
         max-height: 550px;
-        max-width: unset;
+        /* max-width: unset; */
     } 
 }
 
@@ -718,9 +715,7 @@ button {
     .image[data-status="active"] {
         display: block;
     }
-}
 
-@media only screen and (min-width: 769px) {
     #statement-bubble-point{
         position: absolute;
         left: 325px;
@@ -746,5 +741,9 @@ button {
     #statement-bubble-point,
     .mob-hide{
         display: none;
-    }    
+    }
+    
+    .statement {
+        display: none;
+    }
 }
