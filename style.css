@@ -297,32 +297,34 @@ nav {
     border-width: 4px;
 }
 
-.tag-style-0 {
+.tag-style-0,
+.tag-style-6 {
     border-image: linear-gradient(135deg, var(--grad02), var(--grad03)) 1;
 }
 
-.tag-style-1 {
+.tag-style-1,
+.tag-style-7 {
     border-image: linear-gradient(135deg, var(--grad01), var(--grad02)) 1;
 }
 
-.tag-style-2 {
+.tag-style-2,
+.tag-style-8 {
     border-image: linear-gradient(135deg, var(--grad03), var(--grad04)) 1;
 }
 
-.tag-style-3 {
+.tag-style-3,
+.tag-style-9 {
     border-image: linear-gradient(135deg, var(--grad05), var(--grad06)) 1;
 }
 
-.tag-style-4 {
+.tag-style-4,
+.tag-style-10 {
     border-image: linear-gradient(135deg, var(--grad04), var(--grad01)) 1;
 }
 
-.tag-style-5 {
+.tag-style-5,
+.tag-style-11 {
     border-image: linear-gradient(135deg, var(--grad06), var(--grad03)) 1;
-}
-
-.tag-style-6 {
-    border-image: linear-gradient(135deg, var(--grad02), var(--grad05)) 1;
 }
 
 .btn-style-1 {

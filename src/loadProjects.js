@@ -4,9 +4,9 @@ let portfolio = document.getElementById("portfolio");
 let portfolioHtml = ``;
 
 projects.forEach(project => {
-    console.log(project);
+        
     portfolioHtml += `
-    <article class="col project-card tag-style-1 ${project.categoryTagClasses}">
+    <article class="col project-card tag-style-1 ${project.categoryTagClasses[0]} ${project.categoryTagClasses[1]} ">
         <div class="col-md-4 project-content-left">
             <ul class="category-tags pad-b-2">
             `;
@@ -15,7 +15,6 @@ projects.forEach(project => {
                 portfolioHtml += `
                 <li class="tag tag-style-${index}">${tag}</li>
                 `;
-                console.log(index);
             });
 
             portfolioHtml += `   
@@ -36,22 +35,47 @@ projects.forEach(project => {
             portfolioHtml += `
             </ul>
             <div class="external-links">
-                <a href=${project.linkProject} rel="noreferrer noopener" class="sm-lockup">
-                    <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
-                    <p class="keyword">Read more</p>
-                </a>
-                <a href="${project.linkExt}" rel="noreferrer noopener" target="_blank" class="sm-lockup">
-                    <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
-                    <p class="keyword">Go to live site</p>
-                </a>
-            </div>
-        </div>
-        <div class="col project-content-right">
-            <a href="/project-ce-cpt.html" rel="noreferrer noopener" tabindex="-1">
-                <img loading="lazy" class="thumb-img" src="${project.thumbImg}" alt="${project.alt}">
-            </a>
-        </div>
-    </article>
+            `
+
+                if(project.linkProject !== ""){
+                    portfolioHtml += `
+                    <a href="${project.linkProject}" rel="noreferrer noopener" class="sm-lockup">
+                        <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                        <p class="keyword">Read more</p>
+                    </a>`
+                }
+
+                if(project.linkGitHub !== ""){
+                    portfolioHtml += `
+                    <a href="${project.linkGitHub}" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                        <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                        <p class="keyword">View on GitHub</p>
+                    </a>`
+                }
+
+                if(project.linkExt !== ""){
+                    portfolioHtml += `
+                    <a href="${project.linkExt}" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                        <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                        <p class="keyword">Go to live site</p>
+                    </a>`
+                }
+
+                portfolioHtml += `
+                        </div>
+                    </div>`
+
+                if(project.thumbImg !== ""){
+                    portfolioHtml += `
+                    <div class="col project-content-right">
+                        <a href="/project-ce-cpt.html" rel="noreferrer noopener" tabindex="-1">
+                            <img loading="lazy" class="thumb-img" src="${project.thumbImg}" alt="${project.alt}">
+                        </a>
+                    </div>`
+                }
+            
+            portfolioHtml += `
+            </article>
     `;
 });
 portfolio.innerHTML = portfolioHtml;
