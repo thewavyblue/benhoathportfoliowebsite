@@ -16,10 +16,17 @@ projects.forEach(project => {
                 <li class="tag tag-style-${index}">${tag}</li>
                 `;
             });
-
+            
             portfolioHtml += `   
-            </ul>
-        <a href=${project.linkProject} rel="noreferrer noopener">
+            </ul>`
+
+            if (project.linkProject !== "") {
+                portfolioHtml += `
+                    <a href=${project.linkProject} rel="noreferrer noopener">
+                    `
+            }
+
+            portfolioHtml += `
             <h3>${project.title}</h3>
         </a>
             <p>${project.description}</p>
