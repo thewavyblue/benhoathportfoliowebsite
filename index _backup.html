@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--This website was built from scratch with my fair hands. It is a constant work-in-progress as I develop my coding skills and transition my career from a digital designer to a front-end web developer. I guess what I'm trying to say is, please go easy on me, I'm still learning! :D -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Ben Hoath – Digital Designer & Web Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto+Mono&family=Roboto:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Hotjar Tracking Code for https://www.benhoath.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3919934,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTD6XSQLEB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CTD6XSQLEB');
+    </script>
+</head>
+<body>
+    <header id="nav-bar">
+        <nav>
+            <div class="nav-bar">
+                <!--site logo-->
+                <a href="/index.html#hero" class="logo-wrapper">
+                    <img loading="lazy" src="/imgs/svg/benhoath-com-logo.svg" alt="benhoath.com logo">
+                </a>
+                <!--nav links-->
+                <ul class="main-nav">
+                    <li><a href="/index.html#about" class="menu-link">About</a></li>
+                    <li><a href="/index.html#portfolio" class="menu-link">Portfolio</a></li>
+                    <li><a href="/index.html#contact" class="menu-link">Contact</a></li>
+                    <li><a class="menu-link btn-cta btn-style-5" href="https://drive.google.com/drive/folders/1AkgFPcnzx5nYvoUc76xA3bCCKRbkmlp3?usp=sharing" rel="noreferrer noopener" target="_blank">Download CV <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Download CV"></a></li>
+                </ul>
+                <button class="nav-menu-mob"  id="nav-menu-mob" onclick="menu()">
+                    <div class="nav-menu-icon-wrapper"><img loading="lazy" src="/imgs/svg/menu-icon-mob.svg" alt="Menu" class="nav-menu-icon"></div>
+                </button>
+            </div>
+            <ul class="nav-menu-list-mob" style="display: none;">
+                <li class="mob-menu-link-wrapper"><a href="/index.html#about" class="menu-link">About</a></li>
+                <li class="mob-menu-link-wrapper"><a href="/index.html#portfolio" class="menu-link">Portfolio</a></li>
+                <li class="mob-menu-link-wrapper"><a href="/index.html#contact" class="menu-link">Contact</a></li>
+                <li class="mob-menu-link-wrapper"><a class="menu-link btn-cta btn-style-5" href="https://drive.google.com/drive/folders/1AkgFPcnzx5nYvoUc76xA3bCCKRbkmlp3?usp=sharing" rel="noreferrer noopener" target="_blank">Download CV<img loading="lazy" src="/imgs/svg/external-link.svg" alt="Download CV"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="statement">
+        <p class="statement-quote">I usually have something intelligent to say about myself, but I seem to be struggling!</p>
+        <img loading="lazy" id="statement-bubble-point" src="/imgs/svg/bubble-point.svg" alt="">
+    </div>
+    <main class="container">
+        </div>
+        <section class="row homepage-hero" id="hero">
+            <article class="col-lg-6 offset-lg-1 hero-content">
+                <div class="title-wrapper">
+                    <h2 class="eyebrow">Hi, my name is</h2>
+                    <h1 class="title">Ben Hoath.</h1>
+                </div>
+                <div class="title-wrapper">
+                    <h2 class="eyebrow">I am a</h2>
+                    <h1 class="title">Digital Designer & Front End Developer.</h1>
+                </div>
+                <p>
+                    You're looking at a passionate Digital Designer-turning-Front End Developer based in Hastings, UK. This portfolio is a testament to my coding abilities whilst showcasing some of my favourite projects.
+                </p>
+                <p>
+                    I have years of proven experience across:
+                </p>
+                <ul class="category-tags pad-b-2">
+                    <li class="tag tag-style-1">Branding</li>
+                    <li class="tag tag-style-2">Identity</li>
+                    <li class="tag tag-style-3">Print</li>
+                    <li class="tag tag-style-4">Moving Image</li>
+                    <li class="tag tag-style-5">UX / UI</li>
+                    <li class="tag tag-style-6">Web Development</li>
+                    <li class="tag tag-style-1">Product Development</li>
+                </ul>
+                <div class="social-media-icons">
+                    <a href="https://www.linkedin.com/in/benhoath" id="linkedin">
+                        <img loading="lazy" src="/imgs/svg/linkedin.svg" alt="Connect on LinkedIn">
+                    </a>
+                    <a href="https://github.com/thewavyblue" id="github">
+                        <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                    </a>
+                    <a href="https://codepen.io/Ben-Hoath" id="codepen">
+                        <img loading="lazy" src="/imgs/svg/codepen.svg" alt="View on Codepen">
+                    </a>
+                </div>
+            </article>
+            <figure class="col-lg-6 offset-lg-2 hero-image">
+                <img loading="lazy" class="profile-photo" src="/imgs/profile-photo-grad-02.jpg" alt="#">
+            </figure>
+        </section>
+        <section class="row vh-100" id="about">
+            <article class="col-lg-5 offset-lg-1 introduction-wrapper py-6">
+                <div class="introduction z-10">
+                    <h2 class="pad-b-4">A little bit about me</h2>
+                    <p class="pad-b-4">
+                        For over a decade, I’ve developed a career around design for print and digital application. I've worked independently as a freelancer and collaboratively as part of close-knit teams, but always delivering high-quality artwork and experiences to all stakeholders, even under tight budgets and deadlines.
+                    </p>
+                    <p class="pad-b-4">
+                        I graduated with a BA Hons Illustration from University of Portsmouth in 2011. Since then, my creative journey has spanned projects involving 
+                        <span class="keyword">product design</span>, 
+                        <span class="keyword">web design</span>, 
+                        <span class="keyword">branding</span>, 
+                        <span class="keyword">identity</span>, 
+                        <span class="keyword">marketing</span>, and 
+                        <span class="keyword">advertising</span>.
+                    </p>
+                    <p class="pad-b-4">
+                        My curiosity and desire to learn doesn't just stop at design, either. I am a auto-didactic learner, practicing 
+                        <span class="keyword">front-end development</span>
+                        outside business hours. This portfolio is a single place to showcase all disciplines.
+                    </p>
+                </div>
+                <object type="image/svg+xml" data="/imgs/svg/bg-pattern-anim.svg" class="bg-pattern mob-hide"></object>
+            </article>
+        </section>
+        <section class="row project-card-container" id="portfolio-nav">
+
+            <!--Project Filter-->
+
+            <nav class="row project-filter">
+                <div class="row">
+                    <div class="col filter-label">
+                        Filter projects by:
+                    </div>
+                </div>
+                <button class="col btn-filter btn-style-5" id="btn_design">
+                    Design
+                </button>
+                <button class="col btn-filter btn-style-6" id="btn_dev">
+                    Development
+                </button>
+                <button class="col btn-filter btn-style-4" id="btn_all">
+                    All Projects
+                </button>
+                <div class="row">
+                    <div class="col filter-label tag-style-5" id="msg-projects-viewing">
+                        Currently viewing all projects
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="row project-card-container py-6" id="portfolio">
+
+            <!--Project 1-->
+
+            <article class="col project-card tag-style-1 design dev">
+                <div class="col-md-4 project-content-left">
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-5">Design</li>                         
+                            <li class="tag tag-style-6">Development</li>
+                        </ul>
+                        <a href="/project-ce-cpt.html" rel="noreferrer noopener"><h3>Creative Estuary – Cultural Planning Toolkit</h3></a>
+                        <p>Developing cultural infrastructure requires a steady focused effort across long periods of time. The Cultural Planning Toolkit will help users navigate the deliverability of cultural infrastructure</p>
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-2">Webflow</li>
+                            <li class="tag tag-style-3">UX</li>
+                            <li class="tag tag-style-4">UI</li>
+                            <li class="tag tag-style-5">Branding</li>
+                        </ul>
+                        <div class="external-links">
+                            <a href="/project-ce-cpt.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
+                            <a href="https://www.creativeestuary.com/culturalplanningtoolkit" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                                <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                                <p class="keyword">Go to live site</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col project-content-right">
+                    <a href="/project-ce-cpt.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/creative-estuary/Creative-Estuary-CPT-Thumb02.png" alt="Creative Estuary – Cultural Planning Toolkit"></a>
+                </div>
+            </article>
+
+            <!--Project 2-->
+
+            <article class="col project-card tag-style-2 design dev">
+                <div class="col-md-4 project-content-left">
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-1">Design</li>
+                            <li class="tag tag-style-2">Development</li>
+                        </ul>
+                        <a href="/project-wedding-website.html" rel="noreferrer noopener"><h3>My Wedding R.S.V.P Website</h3></a>
+                        <p>I designed and built this website in response to the many wedding R.S.V.P websites offering templates, calendars, and all the other functionalities for a subscription fee.</p>
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-3">UX</li>
+                            <li class="tag tag-style-4">UI</li>
+                            <li class="tag tag-style-5">WordPress</li>
+                            <li class="tag tag-style-6">HTML5</li>
+                            <li class="tag tag-style-1">CSS3</li>
+                            <li class="tag tag-style-2">Javascript</li>
+                        </ul>
+                        <div class="external-links">
+                            <a href="/project-wedding-website.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
+                            <a href="https://benandjentietheknot.site" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                                <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                                <p class="keyword">Go to live site</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col justify-content-center project-content-right">
+                    <a href="/project-wedding-website.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/wedding-rsvp-website/Wedding-RSVP-iPhone-Mockup-Boards-thumb.png" alt="My Wedding R.S.V.P Website"></a>
+                </div>
+            </article>
+
+            <!--Project 3-->
+
+            <article class="col project-card tag-style-3 design">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-5">Design</li>
+                    </ul>
+                    <a href="/project-sm.html" rel="noreferrer noopener"><h3>Sussex Modern website</h3></a>
+                    <p>Flagship website for Sussex tourism focused on art, landscape and wine around the East and West Sussex countryside. The site is an active blog and editorial platform showcasing some of the best qualities of Sussex, visited by thousands of users every month.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-2">UX</li>
+                        <li class="tag tag-style-3">UI</li>
+                        <li class="tag tag-style-4">Branding</li>
+                        <li class="tag tag-style-5">Identity</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-sm.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                        <a href="https://www.sussexmodern.org.uk" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                            <p class="keyword">Go to live site</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col project-content-right">
+                    <a href="/project-sm.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/sussex-modern/sm-devices-mockup-thumb.png" alt="Sussex Modern website"></a>
+                </div>
+            </article>
+        
+            <!--Project 4-->
+
+            <article class="col project-card tag-style-5 design dev">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                        <li class="tag tag-style-2">Development</li>
+                    </ul>
+                    <a href="/project-us.html" rel="noreferrer noopener"><h3>Unitary Space</h3></a>
+                    <p>Our client – a savvy and veteran project managing consultant – required an identity that would allow them to kickstart their new venture, but also stand the test of time.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-2">UX</li>
+                        <li class="tag tag-style-3">UI</li>
+                        <li class="tag tag-style-4">Identity</li>
+                        <li class="tag tag-style-6">HTML5</li>
+                        <li class="tag tag-style-1">CSS3</li>
+                        <li class="tag tag-style-2">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-us.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                        <a href="https://unitary.space" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                            <p class="keyword">Go to live site</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col project-content-right">
+                    <a href="/project-us.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/unitary-space/us-device-mockups.jpg" alt="Unitary Space"></a>
+                </div>
+            </article>
+
+            <!--Project 5-->
+
+            <article class="col project-card tag-style-2 design">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                    </ul>
+                    <a href="/project-tassimojis.html" rel="noreferrer noopener"><h3>Tassimojis</h3></a>
+                    <p>What would an emoticon language inspired by TASSIMO's coffee pod design look like? I explored this idea...</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-2">UI</li>
+                        <li class="tag tag-style-3">Illustration</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-tassimojis.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col project-content-right">
+                    <a href="/project-tassimojis.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/tassimojis/tassimojis-thumb.png" alt="TASSIMOJIs"></a>
+                </div>
+            </article> 
+    
+            <!--Project 6-->
+
+            <article class="col project-card tag-style-1 design">
+                <div class="col-md-4 project-content-left">
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-1">Design</li>
+                        </ul>
+                        <a href="/project-jc-carpentry.html" rel="noreferrer noopener"><h3>JC Carpentry</h3></a>
+                        <p>Local carpenter JC Carpentry wanted an identity that reflected their love for classic Americana-style hand-painted branding.</p>
+                        <ul class="category-tags pad-b-2">
+                            <li class="tag tag-style-2">Identity</li>
+                            <li class="tag tag-style-3">Branding</li>
+                        </ul>
+                        <div class="external-links">
+                            <a href="/project-jc-carpentry.html" rel="noreferrer noopener" class="sm-lockup">
+                                <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                                <p class="keyword">Read more</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col justify-content-center project-content-right">
+                    <a href="/project-jc-carpentry.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/jc-carpentry/jc-carpentry-thumb.png" alt="JC Carpentry logo"></a>
+                </div>
+            </article>
+
+            <!--Project 7-->
+
+            <article class="col project-card tag-style-4 design">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                    </ul>
+                    <a href="/project-sshc.html" rel="noreferrer noopener"><h3>South Saxon Hockey Club
+                        – Brand update & social media assets</h3></a>
+                    <p>After the COVID lockdowns, SSHC was need of a social media push as their presence was pretty much non-existent.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Branding</li>
+                        <li class="tag tag-style-2">Identity</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-sshc.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                        <a href="https://www.instagram.com/southsaxonshockey" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                            <p class="keyword">Go to live site</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col justify-content-center project-content-right">
+                    <a href="/project-sshc.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/sshc/SSHC-Thumb.jpg" alt="South Saxon Hockey Club – Brand update & social media assets"></a>
+                </div>
+            </article>
+
+            <!--Project 8-->
+
+            <article class="col project-card tag-style-4 design">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                    </ul>
+                    <a href="/project-tatanka.html" rel="noreferrer noopener"><h3>Tatanka – Bespoke Carpentry & Joinery</h3></a>
+                    <p>Local carpentry business BR Property Developments had dissolved and were in need of a new look. They came to me for a brand new identity using their new company name, ‘TATANKA’, the Lakota word for ‘bison’.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Identity</li>
+                        <li class="tag tag-style-3">Illustration</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-tatanka.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col justify-content-center project-content-right">
+                    <a href="/project-tatanka.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/tatanka/TATANKA-Logo-Circle-Colour-500px.jpg" alt="Tatanka – Bespoke Carpentry & Joinery"></a>
+                </div>
+            </article>
+
+            <!--Project 9-->
+
+            <article class="col project-card tag-style-4 design">
+                <div class="col-md-4 project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                    </ul>
+                    <a href="/project-sshc-125.html" rel="noreferrer noopener"><h3>South Saxons Hockey Club – 125 year anniversary</h3></a>
+                    <p>A graphic identity celebrating Hastings’ Hockey team the South Saxons reaching their 125 year anniversary. I wanted to design a contemporary identity that was bold and energetic, and that stretched the boundaries of what the identity could do if given the chance to break out using some imagination.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Identity</li>
+                        <li class="tag tag-style-3">Illustration</li>
+                        <li class="tag tag-style-3">Animation</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="/project-sshc-125.html" rel="noreferrer noopener" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/icon-read-more.svg" alt="Read more">
+                            <p class="keyword">Read more</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col justify-content-center project-content-right">
+                    <a href="/project-sshc-125.html" rel="noreferrer noopener" tabindex="-1"><img loading="lazy" class="thumb-img" src="/imgs/sshc-125/SSHC-125-years-LOGO-500px.jpg" alt="South Saxons Hockey Club – 125 year anniversary"></a>
+                </div>
+            </article>
+        
+        </section>
+
+            <!--Projects coming soon...-->
+        
+        <section class="row future-projects-card-container">
+            <div class="row">
+                <div class="col offset-lg-1">
+                    <h2>Other Development-centric Projects</h2>
+                </div>
+            </div>
+
+            <!--Future Project 1-->
+
+            <article class="col future-project-card tag-style-1 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="live-project">Live Project:</h3>
+                        <h3>StitchKeeper – The Knitting & Stitch Tracker App</h3>
+                    </div>
+                    <p>My wife likes to knit, but doesn't like to drop a stitch. She needs a tool to help her keep track of her progress during a knitting session and when she returns after time away. I aim to build a simple web app utilising the device's local storage to save her progress.</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">UI</li>
+                        <li class="tag tag-style-2">UX</li>
+                        <li class="tag tag-style-3">HTML5</li>
+                        <li class="tag tag-style-4">CCS3</li>
+                        <li class="tag tag-style-5">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="https://github.com/thewavyblue/knitting-stitch-counter-app" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                            <p class="keyword">View on GitHub</p>
+                        </a>
+                        <a href="https://stitchkeeper.netlify.app/" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                            <p class="keyword">Go to live site</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!--Future Project 2-->
+
+            <article class="col future-project-card tag-style-5 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="live-project">Live Project:</h3>
+                        <h3>InDesign Extension - Brand guidelines Colour Code Layout</h3>
+                    </div>
+                    <p>Unless you've designed brand guidelines before, you can't understand the unnecessary labour it takes to create colour palettes by copying codes from a modal, closing the modal, pasting the text into a frame, opening the modal for the next colour, and so on. Why is it so painful Adobe! I take things into my own hands with this script I developed...</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-5">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="https://github.com/thewavyblue/InDesignCC-getColorInfo" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                            <p class="keyword">View on GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!--Future Project 3-->
+
+            <article class="col future-project-card tag-style-2 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="live-project">Live / In Progress Project:</h3>
+                        <h3>Mindforge 40k – A Warhammer 40k memory training app</h3>
+                    </div>
+                    <p>I'm an avid tabletop gamer, but I currently don't dedicate enough time to playing because I'm too busy learning to code! This creates a problem when it comes round to 'throwing dice' because I can never recall my army rules and stats quickly or efficiently enough, making every game last twice as long (much to my opponent's dismay). This is where the idea for this app came from; what is essentially a quiz / flashcard app in order to help with memory recall and reduce time spent swiping through pages looking for rules.
+                    </p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">UI</li>
+                        <li class="tag tag-style-2">UX</li>
+                        <li class="tag tag-style-3">HTML5</li>
+                        <li class="tag tag-style-4">CSS3</li>
+                        <li class="tag tag-style-5">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="https://github.com/thewavyblue/Mindforge-40k" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                            <p class="keyword">View on GitHub</p>
+                        </a>
+                        <a href="https://mindforge40k.netlify.app/" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/external-link.svg" alt="Go to live site">
+                            <p class="keyword">Go to live site</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!--Future Project 4-->
+            
+            <!--Future Project 3-->
+
+            <article class="col future-project-card tag-style-5 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <!-- <li class="tag tag-style-1">Design</li> -->
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="live-project">Live / In Progress Project:</h3>
+                        <h3>InDesign Script - Colour Swatch Value Grabber</h3>
+                    </div>
+                    <p>Unless you've designed brand guidelines in InDesign before, you'll find it hard to understand the unnecessary labour it takes to create colour palettes by copying codes from a colour popup modal, closing the modal, pasting the text into a frame, opening the modal for the next colour, and so on. Why is it so painful Adobe! So I'm taking things into my own hands...</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">UI</li>
+                        <li class="tag tag-style-2">UX</li>
+                        <li class="tag tag-style-5">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="https://github.com/thewavyblue/InDesignCC-getColorInfo" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                            <p class="keyword">View on GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!--Future Project 4-->
+
+            <article class="col future-project-card tag-style-3 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="in-progress-project">In Progress Project:</h3>
+                        <h3>NameNest – A name sharing and voting app for new parents</h3>
+                    </div>
+                    <p>Deciding on a name for a child is difficult – both parents have their likes and their dislikes, meaning that alignment isn't always easy. This app aims to store and list desired names in popularity order by offering the users a function to up or down vote their favourite names. This way, names that resonate with both parents float to the top and the disliked names are pushed to the bottom.
+                    </p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-3">HTML5</li>
+                        <li class="tag tag-style-4">CSS3</li>
+                        <li class="tag tag-style-5">Javascript</li>
+                    </ul>
+                    <div class="external-links">
+                        <a href="https://github.com/thewavyblue/NameNest" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                            <img loading="lazy" src="/imgs/svg/github.svg" alt="View on GitHub">
+                            <p class="keyword">View on GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!--Future Project 5-->
+            <!--Future Project 5-->
+
+            <article class="col future-project-card tag-style-4 fp-dev fp-design">
+                <div class="project-content-left">
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">Design</li>
+                        <li class="tag tag-style-2">Development</li>
+                        </ul>
+                    <div class="future-project-title">
+                        <h3 class="future-project">Future Project:</h3>
+                        <h3>MGS1 Codec website theme</h3>
+                    </div>
+                    <p>"This is Snake. Colonel, do you read me?..."</p>
+                    <p>Growing up I loved the games, and the original's design aesthetic for the codec gets me right in the nostalgia. I wonder what a website theme might look like?...</p>
+                    <ul class="category-tags pad-b-2">
+                        <li class="tag tag-style-1">UI</li>
+                        <li class="tag tag-style-2">HTML5</li>
+                        <li class="tag tag-style-3">CCS3</li>
+                        <li class="tag tag-style-4">Javascript</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+
+        <!--Contact-->
+
+        <section class="row">
+            <article class="col-lg-6 offset-lg-1 contact py-6" id="contact">
+                <h2>
+                    Contact me
+                </h2>
+                <p>
+                    Want to start a conversation? We'll get on like a house on fire if it's to do with:
+                </p>
+                <ul class="category-tags pad-b-2">
+                    <li class="tag tag-style-1">
+                        An employment opportunity
+                    </li>
+                    <li class="tag tag-style-2">
+                        Design
+                    </li>
+                    <li class="tag tag-style-3">
+                        Web developmment
+                    </li>
+                    <li class="tag tag-style-4">
+                        Warhammer 40k
+                    </li>
+                    <li class="tag tag-style-5">
+                        Technology
+                    </li>
+                    <li class="tag tag-style-6">
+                        Films
+                    </li>
+                    <li class="tag tag-style-1">
+                        3D Printing
+                    </li>
+                </ul>
+                <div class="social-media-list">
+                    <a href="mailto:benhoath@icloud.com" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                        <img loading="lazy" src="/imgs/svg/email.svg" alt="Email Ben">
+                        <span class="keyword">
+                            benhoath@icloud.com
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benhoath" rel="noreferrer noopener" target="_blank" class="sm-lockup">
+                        <img loading="lazy" src="/imgs/svg/linkedin.svg" alt="Connect on LinkedIn">
+                        <span class="keyword">
+                            Connect on LinkedIn
+                        </span>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--Back to top button-->
+    
+    <img loading="lazy" src="/imgs/svg/icon-back-to-top.svg" alt="Back to top" id="btn-back-to-top" tabindex="0">
+    
+    <footer>
+        <p>© 2024 – forever. Coded by hand, developed with <span class="red">♥</span></p>
+    </footer>
+    <script src="/src/filter.js"></script>
+    <script src="/src/backToTop.js"></script>
+    <script src="/src/nav.js"></script>
+    <script src="/src/loadProjects.js" type="module"></script>
+    <script src="/src/projects.js" type="module"></script>
+    <script src="/src/mouseTrail.js" type="module"></script>
+    <script src="/src/quotes.js" type="module"></script>
+    
+</body>
+</html>
